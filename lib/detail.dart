@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:coffe_shop/order.dart';
 import 'package:coffe_shop/home.dart';
 
 void main() {
@@ -317,6 +318,10 @@ class _DetailState extends State<Detail> {
                 )
               ),
               onPressed: () {
+                Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Order(),
+                )
+                );
               },
               child: 
               Text(
